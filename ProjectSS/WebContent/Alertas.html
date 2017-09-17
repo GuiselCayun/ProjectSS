@@ -71,35 +71,36 @@ function M_eliminar() {
 		</div>
 	</nav>
 	
-	<p><form action="">
-<div> 
+	<form>
+<div>
 	<h1><center>Alertas</center></h1>
-		<div class="form-group"align="center">
-			<label> Id Gondola:</label>
-			<input type="number" min="0" max="100" step="1" >
-		</div>
-	
-		<div class="form-group"align="center">
-			<label> Stock Productos:</label>
-			<input type="number" min="0" max="1000" step="1">
-		</div>
-	
-		<div class="form-group"align="center">
-			<label> Configuracion Alerta:</label>
-			<input type="number" min="0" max="100" step="1">
-		</div>
-	
-		<div class="form-group"align="center">
- 			<label>Mensaje:</label>
-  			<textarea name="Mensaje"></textarea>
-		</div>
-	
-		<div class="form-group"align="center">
-			<button type="button" onclick="M_eliminar()" class="btn btn-danger">Eliminar Alerta</button>
-  			<button type="button" class="btn btn-success">Guardar</button>
-		</div>
-</div>
-</form></p>
+	<table width="500" height="300" border="1" cellspacing="0" cellpadding="0" align="center">
+  <tbody>
+    <tr>
+      <td> Id Gondola:</td>
+      <td><input type="number" min="0" max="100" step="1" ></td>
+    </tr>
+    <tr>
+      <td> Stock Productos:</td>
+      <td><input type="number" min="0" max="100" step="1" ></td>
+    </tr>
+    <tr>
+      <td>Configuracion Alerta:</td>
+      <td><input type="number" min="0" max="100" step="1"></td>
+    </tr>
+    <tr>
+      <td>Mensaje:</td>
+      <td><textarea name="Mensaje"></textarea></td>
+    </tr>
+    <tr>
+    	<td></td>
+    	<td><button type="button" onclick="ConfirmE()" class="btn btn-danger">Eliminar Alerta</button>
+  			<button type="button" onclick="ConfirmG()" class="btn btn-success">Guardar</button>
+  		</td>
+    </tr>
+  </tbody>
+</table>
+</form>
 
 <div class="copy-right">
 	<div class="agileinfo_social_icons">
