@@ -25,6 +25,19 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 <link href="//fonts.googleapis.com/css?family=Dosis:200,300,400,500,600,700,800&amp;subset=latin-ext" rel="stylesheet">
 <link href="//fonts.googleapis.com/css?family=Ubuntu+Condensed&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext" rel="stylesheet">
 <!-- //online-fonts -->
+<script languaje="JavaScript">
+function M_eliminar() {
+	var mensaje = confirm("¿Esta seguro de eliminar la alerta?");
+	//Detectamos si el usuario acepto el mensaje
+	if (mensaje) {
+	alert("¡La alerta ha sido eliminada exitosamente!");
+	}
+	//Detectamos si el usuario denegó el mensaje
+	else {
+	alert("¡Ha cancelado la eliminacion!");
+	}
+	}
+</SCRIPT>
 </head>
 <body>
 
@@ -32,11 +45,7 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 <div class="nav-links">	
 		<div class="header-w3l">
 			<div class="container">
-				<a class="navbar-brand" href="index.html"><h1><span>Online</span> Banking</h1></a>
-				<div class="call-w3l">
-					<img src="images/call.png">
-				</div>
-				<div class="clearfix"></div>
+				<a class="navbar-brand" href="index.html"><h1><span>Smart Shelft</span></h1></a>
 			</div>
 		</div>
 			<nav class="navbar navbar-inverse">
@@ -61,96 +70,37 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 			</div>
 		</div>
 	</nav>
-	<div class="codecon_half">
-				<div class="expSearchBox">
-					<div class="expSearchFrom">
-						<input id="field" type="search" placeholder="Search here"/>
-						<div class="close">
-							<span class="front"></span>
-							<span class="back"></span>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="clearfix"></div>
-</div>
-<!-- //navigation -->
-<!-- banner section -->
-<div class="banner-slider">
-				<div class="container">
-						<!--Slider-->	
-				<div class="callbacks_container">
-					<ul class="rslides" id="slider3">
-						<li>
-							<div class="w3l_banner_info">
-								<h3>Merchant accounts and credit card processing</h3>
-								<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-								<div class="agileits_w3layouts_more menu__item">
-									<a href="#" class="menu__link" data-toggle="modal" data-target="#myModal">Learn More</a>
-								</div>
-							</div>
-						</li>
-						<li>
-							<div class="w3l_banner_info">
-								<h3>Don't hesitate to accept credit cards today!</h3>
-								<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>					
-								<div class="agileits_w3layouts_more menu__item">
-									<a href="#" class="menu__link" data-toggle="modal" data-target="#myModal">Learn More</a>
-								</div>
-							</div>
-						</li>
-						<li>
-							<div class="w3l_banner_info">
-								<h3>Merchant accounts and credit card processing</h3>
-								<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>						
-								<div class="agileits_w3layouts_more menu__item">
-									<a href="#" class="menu__link" data-toggle="modal" data-target="#myModal">Learn More</a>
-								</div>
-							</div>
-						</li>
-						<li>
-							<div class="w3l_banner_info">
-								<h3>Don't hesitate to accept credit cards today!</h3>
-								<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-								<div class="agileits_w3layouts_more menu__item">
-									<a href="#" class="menu__link" data-toggle="modal" data-target="#myModal">Learn More</a>
-								</div>
-							</div>
-						</li>
-					</ul>
-				</div>
-				<!-- //Slider -->
-
-				</div>
-</div>
-<!-- Modal1 -->
-<div class="modal fade" id="myModal" tabindex="-1" role="dialog">
-	<div class="modal-dialog">
-		<!-- Modal content-->
-		<div class="modal-content">
-			<div class="modal-header">
-				<button type="button" class="close" data-dismiss="modal">&times;</button>
-					<img src="images/g7.jpg" alt=" " class="img-responsive">
-					<h5>Donec lobortis pharetra dolor</h5>
-					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, rds which don't look even slightly believable..</p>
-			</div>
+	
+	<p><form action="">
+<div> 
+	<h1><center>Alertas</center></h1>
+		<div class="form-group"align="center">
+			<label> Id Gondola:</label>
+			<input type="number" min="0" max="100" step="1" >
 		</div>
-		<!-- //Modal content-->
-	</div>
-</div>
-<!-- //Modal1 -->
-<!-- //banner section -->
-<!-- about -->
-
-<!-- footer -->
-<div class="footer-bot">
-	<div class="container">
-		<div class="logo2">
-			<h2><a href="index.html"><span>Online</span> Banking</a></h2>
+	
+		<div class="form-group"align="center">
+			<label> Stock Productos:</label>
+			<input type="number" min="0" max="1000" step="1">
 		</div>
-		<div class="clearfix"></div>
-	</div>
+	
+		<div class="form-group"align="center">
+			<label> Configuracion Alerta:</label>
+			<input type="number" min="0" max="100" step="1">
+		</div>
+	
+		<div class="form-group"align="center">
+ 			<label>Mensaje:</label>
+  			<textarea name="Mensaje"></textarea>
+		</div>
+	
+		<div class="form-group"align="center">
+			<button type="button" onclick="M_eliminar()" class="btn btn-danger">Eliminar Alerta</button>
+  			<button type="button" class="btn btn-success">Guardar</button>
+		</div>
 </div>
+</form></p>
+
 <div class="copy-right">
 	<div class="agileinfo_social_icons">
 		<ul class="agileits_social_list">
