@@ -25,19 +25,21 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 <link href="//fonts.googleapis.com/css?family=Dosis:200,300,400,500,600,700,800&amp;subset=latin-ext" rel="stylesheet">
 <link href="//fonts.googleapis.com/css?family=Ubuntu+Condensed&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext" rel="stylesheet">
 <!-- //online-fonts -->
-<script languaje="JavaScript">
-function M_eliminar() {
-	var mensaje = confirm("¿Esta seguro de eliminar la alerta?");
-	//Detectamos si el usuario acepto el mensaje
-	if (mensaje) {
-	alert("¡La alerta ha sido eliminada exitosamente!");
-	}
-	//Detectamos si el usuario denegó el mensaje
-	else {
-	alert("¡Ha cancelado la eliminacion!");
-	}
-	}
-</SCRIPT>
+<!-- funcion clase mensaje del boton eliminar-->
+<script type="text/javascript">
+function ConfirmE() {
+//Ingresamos un mensaje a mostrar
+var mensaje = confirm("¿Esta seguro de eliminar la alerta?");
+//Detectamos si el usuario acepto el mensaje
+if (mensaje) {
+alert("¡La alerta ha sido eliminada exitosamente!");
+}
+//Detectamos si el usuario denegó el mensaje
+else {
+alert("¡Ha cancelado la eliminacion!");
+}
+}
+</script>
 </head>
 <body>
 
