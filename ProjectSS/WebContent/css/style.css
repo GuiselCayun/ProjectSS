@@ -480,6 +480,7 @@ input#field:focus+.close span.back{
 /*-- about --*/
 .about, .services, .team, .gallery{
 	padding:6em 0;
+	background-color:#FFF !important;
 }
 h3.w3l-title {
     font-size: 4em;
