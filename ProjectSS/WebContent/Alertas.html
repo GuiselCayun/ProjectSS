@@ -6,7 +6,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <!DOCTYPE HTML>
 <html lang="zxx">
 <head>
-<title>Online Banking a Banking Category Bootstrap Responsive Web Template | Home :: w3layouts</title>
+<title>Alerta - Smart Shelft</title>
 <!-- Meta tag Keywords -->
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -26,20 +26,6 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 <link href="//fonts.googleapis.com/css?family=Ubuntu+Condensed&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext" rel="stylesheet">
 <!-- //online-fonts -->
 <!-- funcion clase mensaje del boton eliminar-->
-<script type="text/javascript">
-function ConfirmE() {
-//Ingresamos un mensaje a mostrar
-var mensaje = confirm("¿Esta seguro de eliminar la alerta?");
-//Detectamos si el usuario acepto el mensaje
-if (mensaje) {
-alert("¡La alerta ha sido eliminada exitosamente!");
-}
-//Detectamos si el usuario denegó el mensaje
-else {
-alert("¡Ha cancelado la eliminacion!");
-}
-}
-</script>
 </head>
 <body>
 
@@ -47,10 +33,11 @@ alert("¡Ha cancelado la eliminacion!");
 <div class="nav-links">	
 		<div class="header-w3l">
 			<div class="container">
-				<a class="navbar-brand" href="index.html"><h1><span>Smart Shelft</span></h1></a>
+				<a class="navbar-brand" href="index.html"><h1><span>Smart</span> Shelft</h1></a>
+				<div class="clearfix"></div>
 			</div>
 		</div>
-			<nav class="navbar navbar-inverse">
+		<nav class="navbar navbar-inverse">
 			<div class="navbar-header">
 				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
 					<span class="icon-bar"></span>
@@ -64,7 +51,12 @@ alert("¡Ha cancelado la eliminacion!");
 					<li class="active"><a href="index.html">Ingreso</a></li>
 					<li><a href="Inicio.html" >Inicio</a></li>
 					<li><a href="Mis gondolas.html" >Mis Gondolas</a></li>
-					<li><a href="Alertas.html" >Alertas</a></li>
+					<li class="dropdown"><a href="" class="dropdown-toggle" data-toggle="dropdown"">Alertas<b class="caret"></b></a>
+					 	<ul class="dropdown-menu">
+         				 	<li><a href="CrearAlerta.html">Crear alerta</a></li>
+          					<li><a href="Alertas.html">Modificar alerta</a></li>
+          				</ul>
+          			</li>
 					<li><a href="Configuraciones.html" >Configuraciones</a></li>	
 					
 				</ul>
@@ -78,6 +70,10 @@ alert("¡Ha cancelado la eliminacion!");
 	<form>	
 	<table width="500" height="300" border="0" cellspacing="0" cellpadding="0" align="center">
   <tbody>
+  	 <tr>
+      <td> Id Alerta:</td>
+      <td><input type="number" min="0" max="999"></td>
+    </tr>
     <tr>
       <td> Id Gondola:</td>
       <td><input type="number" min="0" max="100" step="1" ></td>
@@ -87,7 +83,7 @@ alert("¡Ha cancelado la eliminacion!");
       <td><input type="number" min="0" max="100" step="1" ></td>
     </tr>
     <tr>
-      <td>Configuracion Alerta:</td>
+      <td>Configuracion Alerta % :</td>
       <td><input type="number" min="0" max="100" step="1"></td>
     </tr>
     <tr>
@@ -96,7 +92,8 @@ alert("¡Ha cancelado la eliminacion!");
     </tr>
     <tr>
     	<td></td>
-    	<td><button type="button" onclick="ConfirmE()" class="btn btn-danger">Eliminar Alerta</button>
+    	<td>
+    		<button type="button" onclick="ConfirmE()" class="btn btn-danger">Eliminar Alerta</button>
   			<button type="button" onclick="ConfirmG()" class="btn btn-success">Guardar</button>
   		</td>
     </tr>
@@ -124,7 +121,7 @@ alert("¡Ha cancelado la eliminacion!");
 		</ul>
 	</div>
 	<div class="container">
-		<p> &copy; 2017 Online Banking. All Rights Reserved | Design by  <a href="http://w3layouts.com/"> W3layouts</a></p>
+		<p> &copy; 2017 Smart Shelft. Todos los derechos reservados  | Design by  <a href="http://w3layouts.com/"> W3layouts</a></p>
 	</div>
 </div>
 <!-- //footer -->

@@ -66,36 +66,36 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
       				<li><a href="index.html"><span class="glyphicon glyphicon-log-in"></span> Cerrar</a></li>
     			</ul>
 		</div>
-	
+
 	<div class="about" id="about">
 	<div class="container">
-    <h1><center>Datos Personales</center></h1>
+    <h1><center>Alertas</center></h1>
 	<form>	
 	<table width="500" height="300" border="0" cellspacing="0" cellpadding="0" align="center">
   <tbody>
   	 <tr>
-      <td> Nombre:</td>
-      <td><input type="text"></td>
+      <td> Id Alerta:</td>
+      <td><input type="number" min="0" max="999"></td>
     </tr>
     <tr>
-      <td> Usuario:</td>
-      <td><input type="text"></td>
+      <td> Id Gondola:</td>
+      <td><input type="number" min="0" max="100" step="1" ></td>
     </tr>
     <tr>
-      <td> Rut:</td>
-      <td><input type="text"></td>
+      <td> Stock Productos:</td>
+      <td><input type="number" min="0" max="100" step="1" ></td>
     </tr>
     <tr>
-      <td>Contraseña:</td>
-      <td><input type="text"></td>
+      <td>Configuracion Alerta % :</td>
+      <td><input type="number" min="0" max="100" step="1"></td>
     </tr>
-   <tr>
-      <td>Validar Contraseña:</td>
-      <td><input type="text"></td>
+    <tr>
+      <td>Mensaje:</td>
+      <td><textarea name="Mensaje"></textarea></td>
     </tr>
     <tr>
     	<td></td>
-    	<td><button type="button" class="btn btn-primary">Actualizar datos</button>
+    	<td><button type="button" class="btn btn-primary">Crear Alerta</button>
     	</td>
     </tr>
   </tbody>
@@ -103,11 +103,11 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 </form>
 </div>
 </div>
-<!-- footer -->
+
 <div class="footer-bot">
 	<div class="container">
 		<div class="logo2">
-			<h2><a href="index.html"><span>Online</span> Banking</a></h2>
+			<h2><a href="index.html"><span>Online</span> Repository</a></h2>
 		</div>
 		<div class="clearfix"></div>
 	</div>
