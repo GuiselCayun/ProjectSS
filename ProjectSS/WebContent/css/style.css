@@ -2149,7 +2149,7 @@ body, html {
 }
 
 .card-container.card {
-    width:210px;
+    width:10px;
     padding: 40px 40px;
 }
 
@@ -2226,7 +2226,8 @@ body, html {
 .form-signin input[type=email],
 .form-signin input[type=password],
 .form-signin input[type=text],
-.form-signin button {
+.form-checkbox pull-left" button{
+ {
     width: 100%;
     display: block;
     margin-bottom: 10px;
@@ -2236,7 +2237,6 @@ body, html {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
-
 .form-signin .form-control:focus {
     border-color: rgb(104, 145, 162);
     outline: 0;
@@ -2275,6 +2275,7 @@ body, html {
 .forgot-password:hover,
 .forgot-password:active,
 .forgot-password:focus{
+	
     color: rgb(12, 97, 33);
 }
 
@@ -2290,7 +2291,16 @@ body, html {
 	text-align:right;
 }
 
-.Tabla{
-	text-align:right;
+.tablainicio{
+	 border-collapse: separate;
+  border-spacing:  10px;
+}
+
+#col1 {
+float: left;
+}
+
+#col2 {
+float: right;
 }
 /*--//responsive--*/
