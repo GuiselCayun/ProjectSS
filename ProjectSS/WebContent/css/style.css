@@ -117,7 +117,7 @@ nav.navbar.navbar-inverse {
 .link-effect a {
 	padding: 0 0 10px;
 }
-.link-effect a::after {
+.link-effect > li > a::after {
     position: absolute;
     top: 88%;
     left: 6%;
@@ -133,7 +133,7 @@ nav.navbar.navbar-inverse {
     -moz-transform: translateY(-10px);
     transform: translateY(-10px);
 }
-.link-effect li.active a::after, .link-effect a:hover::after {
+.link-effect > li.active > a::after, .link-effect a:hover::after {
     height: 3px;
     opacity: 1;
     -webkit-transform: translateY(0px);
