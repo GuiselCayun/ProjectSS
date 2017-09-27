@@ -2145,7 +2145,7 @@ a.w3_agile_google:hover{
 body, html {
     height: 100%;
     background-repeat: no-repeat;
-    background-image: linear-gradient(rgb(104, 145, 162), rgb(12, 97, 33));
+    background-image: ;
 }
 
 .card-container.card {
@@ -2268,6 +2268,10 @@ body, html {
     background-color: rgb(12, 97, 33);
 }
 
+.color1
+{
+	background-color:#135CA0;
+}
 .forgot-password {
     color: rgb(104, 145, 162);
 }
@@ -2303,4 +2307,15 @@ float: left;
 #col2 {
 float: right;
 }
+
+.contenedor-modal {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+
+
+
 /*--//responsive--*/

@@ -57,7 +57,7 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
           					<li><a href="Alertas.html">Modificar alerta</a></li>
           				</ul>
           			</li>
-					<li><a href="Configuraciones.html" >Configuraciones</a></li>	  
+					<li><a href="ConfiguracionPersonal.html" >Configuraciones</a></li>	  
 				</ul>
 			</div>
 			</div>
@@ -74,28 +74,67 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 	<table width="500" height="300" border="0" cellspacing="0" cellpadding="0" align="center">
   <tbody>
   	 <tr>
-      <td> Nombre:</td>
+      <th> Nombre:</th>
       <td><input type="text"></td>
     </tr>
     <tr>
-      <td> Usuario:</td>
+      <th> Usuario:</th>
       <td><input type="text"></td>
     </tr>
     <tr>
-      <td> Rut:</td>
+      <th> Rut:</th>
       <td><input type="text"></td>
     </tr>
     <tr>
-      <td>Contraseña:</td>
+      <th>Contraseña:</th>
       <td><input type="text"></td>
     </tr>
    <tr>
-      <td>Validar Contraseña:</td>
+      <th>Validar Contraseña:</th>
       <td><input type="text"></td>
     </tr>
     <tr>
     	<td></td>
-    	<td><button type="button" class="btn btn-primary">Actualizar datos</button>
+    	<td>
+    	<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Actualizar datos</button>
+    	
+    		<div class="contenedor-modal">
+    			<div id="myModal" class="modal fade" role="dialog">
+    				<div class="modal-dialog">
+    				
+    					<div class="modal-content">
+    					<div class="modal-header"> 
+    					<h3 class="modal-title">Confirmacion</h3>
+    					</div>
+    					<div class="modal-body">
+    					<h4><span class="glyphicon glyphicon-question-sign"></span>¿Esta seguro de actualizar sus datos?</h4>
+    					</div>
+    					<div class="modal-footer">
+    						<button type="button" class="btn btn-primary" data-dismiss="modal">NO</button>
+    						<button type="button" class="btn btn-success" data-toggle="modal" data-target="#myModal2">SI</button>
+    	
+    							<div class="contenedor-modal">
+    								<div id="myModal2" class="modal fade" role="dialog">
+    									<div class="modal-dialog">
+    				
+    										<div class="modal-content">
+    										<div class="modal-body">
+    											<h4><span class="glyphicon glyphicon-ok-sign"></span>Datos actualizados correctamente</h4>
+    										</div>
+    										<div class="modal-footer">
+    											<button type="button" class="btn btn-success" data-dismiss="modal">OK</button>
+    										</div>
+    										</div>
+    					
+    									</div>
+    								</div>
+    							</div>
+    					</div>
+    					</div>
+    					
+    				</div>
+    			</div>
+    		</div>
     	</td>
     </tr>
   </tbody>
